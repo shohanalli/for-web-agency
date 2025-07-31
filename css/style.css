@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #0000;
+  --secondery-color: #FF7A30;
+}
+
+/* text-[var(--primary-color)] bg-[var(--secondary-color)]  */
+@keyframes borderAnimate {
+  0% {
+    border-color: #FF7A30;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+  100% {
+    border-color: #FF7A30;
+  }
+}
+
+.animated-border {
+  animation: borderAnimate 2s linear infinite;
+
+}
+.custom-gradient {
+    background: radial-gradient(circle at center, #411104 90%, black 100%);
+    background-size: cover;
+    background-position: center;
+}
+.custom-margin{
+    margin-top: 80px;
+}

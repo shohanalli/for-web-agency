@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css"><!-- coustom css -->
+    <title>Shohan</title>
+</head>
+<body>
+    <header class="custom-gradient md:py-10 ">
+
+        <section class=" md:w-[95%] mx-auto bg-[url('./img/hero-banner1.png')] bg-cover bg-center shadow-md px-10">
+            <nav class="flex items-center justify-between py-4 relative">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-white">Logo</div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-8  font-medium">
+                <li><a href="" class="text-white">Home</a></li>
+                <li><a href="" class="text-[#d6d3d3]">About</a></li>
+                <li><a href="" class="text-[#d6d3d3]">Pricing</a></li>
+                <li><a href="" class="text-[#d6d3d3]">Feature</a></li>
+            </ul>
+
+            <!-- Get Started Button -->
+            <div class="hidden md:block">
+                <button class="animated-border bg-black text-white border-2 border-[#E67514] px-4 py-2 rounded shadow">
+                Get Start Today
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <div class="md:hidden text-white text-3xl cursor-pointer" id="menu-btn">
+                &#9776;
+            </div>
+            </nav>
+
+            <!-- Slide-In Mobile Menu -->
+            <div id="mobile-menu" class="fixed top-0 left-[-100%] w-[75%] h-full bg-black bg-opacity-90 text-white py-10 px-6 transition-all duration-500 md:hidden z-50">
+            <div class="flex justify-between items-center mb-10">
+                <h1 class="text-2xl font-bold">Logo</h1>
+                <div id="close-btn" class="text-3xl cursor-pointer">&times;</div>
+            </div>
+            <nav class="flex flex-col space-y-6 text-lg">
+                <a href="" class="text-white">Home</a>
+                <a href="" class="text[#d6d3d3]">About</a>
+                <a href="" class="text[#d6d3d3]">Pricing</a>
+                <a href="" class="text[#d6d3d3]">Feature</a>
+                <button class="bg-black text-white border border-white px-4 py-2 rounded shadow w-[50%] mt-5 animated-border">Get Start Today</button>
+            </nav>
+            </div>
+        </section>
+    </header>
+
+    <!-- custom js link -->
+    <script src="js/style.js"></script>
+</body>
+</html>
