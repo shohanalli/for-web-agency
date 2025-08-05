@@ -1,6 +1,6 @@
 :root {
   --primary-color: #0000;
-  --secondery-color: #FF7A30;
+  --secondary-color: #FF7A30;
 }
 
 /* text-[var(--primary-color)] bg-[var(--secondary-color)]  */
@@ -27,4 +27,66 @@
 }
 .custom-margin{
     margin-top: 80px;
+}
+/* hero section design start */
+
+@keyframes moveRight {
+    0%, 25% { transform: translateY(-100%); }
+    50% { transform: translateY(0%); }
+    100% { transform: translateY(0%); }
+}
+@keyframes moveBottom {
+    0%, 50% { transform: translateX(100%); }
+    75% { transform: translateX(0%); }
+    100% { transform: translateX(0%); }
+}
+@keyframes moveLeft {
+    0%, 75% { transform: translateY(100%); }
+    100% { transform: translateY(0%); }
+}
+
+.animate-border-right {
+    animation: moveRight 5s linear infinite;
+}
+.animate-border-bottom {
+    animation: moveBottom 5s linear infinite;
+}
+.animate-border-left {
+    animation: moveLeft 5s linear infinite;
+}
+
+/* button border moving system */
+@keyframes borderMoveEffect {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 400% 0%;
+    }
+}
+
+.border-animation {
+    pointer-events: none;
+    content: "";
+    border-radius: inherit;
+    inset: 0;
+    z-index: 5;
+    background: linear-gradient(90deg,
+        var(--secondary-color),
+        transparent,
+        var(--secondary-color),
+        transparent,
+        var(--secondary-color));
+    background-size: 400% 100%;
+    animation: borderMoveEffect 10s linear infinite;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    padding: 2px; /* Border Thickness */
+    position: absolute;
 }

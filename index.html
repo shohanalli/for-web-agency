@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="custom-gradient md:py-10 ">
-
-        <section class=" md:w-[95%] mx-auto bg-[url('./img/hero-banner1.png')] bg-cover bg-center shadow-md px-10">
+    <section class=" md:w-[95%] mx-auto bg-[url('./img/hero-banner1.png')] bg-cover bg-center shadow-md px-10">
+        <div>
             <nav class="flex items-center justify-between py-4 relative">
             <!-- Logo -->
-            <div class="text-2xl font-bold text-white">Logo</div>
+            <div class="text-2xl font-bold text-[var(--secondary-color)]">Logo</div>
 
             <!-- Desktop Menu -->
             <ul class="hidden md:flex space-x-8  font-medium">
@@ -28,11 +28,11 @@
 
             <!-- Get Started Button -->
             <div class="hidden md:block">
-                <button class="animated-border bg-black text-white border-2 border-[#E67514] px-4 py-2 rounded shadow">
-                Get Start Today
-                </button>
+            <button class="relative group z-20 bg-black text-white border border-[var(--secondary-color)] px-6 py-3 rounded shadow cursor-pointer">
+                <span class="absolute top-0 left-0 w-full h-full rounded border-animation"></span>
+                <span class="relative z-10">Get start Today</span>
+            </button>
             </div>
-
             <!-- Mobile Menu Button (Hamburger Icon) -->
             <div class="md:hidden text-white text-3xl cursor-pointer" id="menu-btn">
                 &#9776;
@@ -50,10 +50,40 @@
                 <a href="" class="text[#d6d3d3]">About</a>
                 <a href="" class="text[#d6d3d3]">Pricing</a>
                 <a href="" class="text[#d6d3d3]">Feature</a>
-                <button class="bg-black text-white border border-white px-4 py-2 rounded shadow w-[50%] mt-5 animated-border">Get Start Today</button>
+                <button class="animated-border bg-black text-white border-3 cursor-pointer border-[var( --secondary-color)] px-4 py-2 rounded shadow ">
+                Get Start Today
+                </button>
             </nav>
             </div>
-        </section>
+        </div>
+    <!-- hero section start -->
+    <div class="relative w-full sm:w-3/4 md:w-1/2 mx-auto mb-6 flex flex-col items-center justify-center text-center pt-16 px-4 overflow-hidden">
+        <div class="flex gap-2 mb-4">
+            <i class="cursor-pointer fa-solid fa-envelope text-white border border-white rounded-full p-2 transition transform hover:scale-110 hover:bg-[var(--secondary-color)]"></i>
+            <i class="cursor-pointer fa-brands fa-whatsapp text-white border border-white rounded-full p-2 shadow-2xl scale-110 transition transform hover:scale-125 hover:bg-[var(--secondary-color)]"></i>
+            <i class="cursor-pointer fa-brands fa-facebook text-white border border-white rounded-full p-2 transition transform hover:scale-110 hover:bg-[var(--secondary-color)]"></i>
+        </div>
+        <div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl text-white font-semibold mb-4">Evaluate Your Design & Development With us</h1>
+            <p class="text-sm sm:text-base text-white">We craft innovative, responsive websites and powerful web applications that elevate your business, ensuring seamless user experiences across all devices.</p>
+        </div>
+    
+    <button class="relative group z-20 bg-black text-white border border-[var(--secondary-color)] px-6 py-2 rounded shadow mt-5 cursor-pointer overflow-hidden">
+        <span class="absolute top-0 left-0 w-full h-full rounded border-animation"></span>
+        <span class="relative z-10">Join us Today</span>
+    </button>
+
+        <!-- Animated Border Lines (Lower Z-Index) -->
+        <span class="hidden md:block absolute z-10 top-0 right-0 h-full w-[2px] bg-gradient-to-b from-[var(--secondary-color)] to-transparent animate-border-right"></span>
+        <span class="hidden md:block absolute z-10 bottom-0 right-0 w-full h-[2px] bg-gradient-to-l from-[var(--secondary-color)] to-transparent animate-border-bottom"></span>
+        <span class="hidden md:block absolute z-10 bottom-0 left-0 h-full w-[2px] bg-gradient-to-t from-[var(--secondary-color)] to-transparent animate-border-left"></span>
+    </div>
+    <div>
+       <div><h1>5.0</h1><p>Google rating</p></div>
+       <div></div>
+       <div></div>
+    </div>
+    </section>
     </header>
 
     <!-- custom js link -->
